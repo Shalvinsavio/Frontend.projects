@@ -3,6 +3,7 @@ body{
     padding: 0;
 }
 nav{
+    z-index: 2;
     background-color:LightGray;
     height: 65px;
     position: fixed;
@@ -131,6 +132,7 @@ margin-left: 30px;
    height: 500px;
     margin-top: 60px;
 position: relative;
+z-index: -1;
 }
 
 .h1-2{
