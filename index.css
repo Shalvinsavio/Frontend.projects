@@ -31,7 +31,7 @@ ul{
      display: flex;
     justify-content:right;
 }
-
+/*--------------------------- Our service section ------------------*/
 .services{
       font-family: "Rubik", sans-serif;
     color: #183b56;
@@ -54,7 +54,18 @@ ul{
 .img1{
     height: 150px;
     width: 150px;
+    padding-left: 65px;
+}
+.img121{
+    height: 150px;
+    width: 150px;
     padding-left: 35px;
+ 
+}
+.img131{
+    height: 150px;
+    width: 150px;
+    padding-left: 45px;
 }
 .box1{
    width: fit-content;
@@ -89,6 +100,7 @@ margin-left: 30px;
     justify-content: center;
     padding: 20px;    
 }
+    /* <!----------------------------------- Our Products ---------------------> */
 
 .h1-1{
       font-family: "Rubik", sans-serif;
@@ -106,6 +118,7 @@ margin-left: 30px;
     margin-top: 20px;
     height: 400px;
     width: 400px;
+    border-radius: 10px;
 }
 
 .button{
@@ -124,7 +137,7 @@ margin-left: 30px;
    background-color: lightcyan;
    cursor: pointer;
 }
-/* Trendingblods -----------------------*/
+/*---------------------Color -----------------------*/
 
 .color{
     background-color: lightgrey;
@@ -157,9 +170,10 @@ width:400px;
 position: relative;
 right: 300px;
 bottom: 185px;
+border-radius: 10px;
 
 }
-
+/* --------------------Trending blogs ------------------------*/
 .h1-3{
       font-family: "Rubik", sans-serif;
  color: #183b56;
@@ -215,7 +229,7 @@ left: 200px;
 
 }
 
-/* OFFFERS-------------------------------------------- */
+/* -------------------- Explore Deals & Offers--------------------------- */
 
 .h1-4{
  color: #183b56;
@@ -235,14 +249,26 @@ font-size: 45px;
     width: 150px;
     height: 150px;
 margin-left: 80px;
-}
+cursor: pointer;
+border-radius: 10px;
 
+}
+.img4:hover{
+     transform: scale(1.1);
+    transition: 1s;
+}
 .img5{
     width: 150px;
     height: 150px;
     margin-left: 80px;
-}
+    cursor: pointer;
+border-radius: 10px;
 
+}
+.img5:hover{
+     transform: scale(1.1);
+    transition: 1s;
+}
 .gadgets{
     display: flex;
 
@@ -295,14 +321,26 @@ color: #ff9f00;
      width: 150px;
     height: 150px;
 margin-left: 80px;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.img6:hover{
+     transform: scale(1.1);
+    transition: 1s;
 }
 
 .img7{
      width: 150px;
     height: 150px;
-    margin-left: 80px;
-}
+    margin-left: 80px;cursor: pointer;
+border-radius: 10px;
 
+}
+.img7:hover{
+       transform: scale(1.1);
+    transition: 1s;
+}
 
 .Accesories{
     display: flex;
@@ -359,7 +397,7 @@ box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     color: #007bff;
 }
 
-/* footer---------------------- */
+/* --------------------------footer---------------------- */
 
 .footer{
     background-color: #0d2436;
