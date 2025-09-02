@@ -4,21 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="icon" href="./images/Icon.image.jpeg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./project.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body id="body">
     <!-- navbar -->
@@ -32,66 +19,80 @@
       </ul>
     </nav>
     <!-- Our Services Section -->
-     <div id="services">
-    
-    <div class="ourservices">
-      <h1 class="services">Our Services</h1>
-      <p class="para1">
-        Most Online Stores offer lower prices. Online shopping makes price
-        comparison simpler and quicker. It is very convenient to shop from where
-        you are located. It saves you the cost of driving to stores, as well as
-        parking fees.
-      </p>
+    <div id="services">
+      <div class="ourservices">
+        <h1 class="services">Our Services</h1>
+        <p class="para1">
+          Most Online Stores offer lower prices. Online shopping makes price
+          comparison simpler and quicker. It is very convenient to shop from
+          where you are located. It saves you the cost of driving to stores, as
+          well as parking fees.
+        </p>
+      </div>
+      <!-- Box -->
+      <div class="box">
+        <div class="box1">
+          <img src="./images/newimageforjs1.png" class="img1" />
+          <h3 class="h3-1">Fast and Free Delivery</h3>
+          <p>
+            Fast, Free and convenient delivery <br />choices on millions of
+            items
+          </p>
+        </div>
+
+        <div class="box2">
+          <img src="./images/newjs2.webp" class="img121" />
+          <h3 class="h3-1">
+            100% Money back<br />
+            guarantee
+          </h3>
+          <p>
+            This is Probably the mst popular<br />
+            gurantee in the world
+          </p>
+        </div>
+
+        <div class="box3">
+          <img
+            src="./images/online-support-icon_1178600-13950.avif"
+            class="img131"
+          />
+          <h3 class="h3-1">Online support 24/7</h3>
+          <p>
+            Our Online Support will Provide you <br />with many useful
+            functions, <br />valuabe information, tips.
+          </p>
+        </div>
+      </div>
     </div>
-    <!-- Box -->
-    <div class="box">
-      <div class="box1">
-        <img src="./images/newimageforjs1.png" class="img1" />
-        <h3 class="h3-1">Fast and Free Delivery</h3>
-        <p>
-          Fast, Free and convenient delivery <br />choices on millions of items
-        </p>
-      </div>
-
-      <div class="box2">
-        <img src="./images/newjs2.webp" class="img121" />
-        <h3 class="h3-1">
-          100% Money back<br />
-          guarantee
-        </h3>
-        <p>
-          This is Probably the mst popular<br />
-          gurantee in the world
-        </p>
-      </div>
-
-      <div class="box3">
-        <img src="./images/online-support-icon_1178600-13950.avif" class="img131" />
-        <h3 class="h3-1">Online support 24/7</h3>
-        <p>
-          Our Online Support will Provide you <br />with many useful functions,
-          <br />valuabe information, tips.
-        </p>
-      </div>
-    </div>
-
-     </div>
     <!-- Our Products -->
-
 
     <h1 class="h1-1">Our Products</h1>
 
     <div class="ourproducts" id="product">
       <div>
         <img src="./images/Headphones(2).jpg" class="img2" /><br />
-        <button class="button">Add</button>
+        <button class="button" onclick="popup('Headphones')">Add</button>
       </div>
 
       <div>
         <img src="./images/Earbuds.jpg" class="img2" /><br />
-        <button class="button">Add</button>
+        <button class="button" onclick="popup('Earbuds')">Add</button>
       </div>
     </div>
+
+    <!-- <h2>Your Cart</h2>
+<table border="1" id="cartTable" style="width:50%; text-align:center;">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody id="cartBody"></tbody>
+</table>
+<p id="totalItems"><b>Total Items:</b> 0</p>  -->
+
 
     <!-- Color -->
 
@@ -116,29 +117,35 @@
 
     <div class="Trendingblogs" id="trendingblogs">
       <div class="blog1">
-        <p class="para3">Fountain Pens</p>
+        <p>Fountain Pens</p>
 
         <h2 class="h2">Guide to Fountain Pen Nibs</h2>
 
-        <p class="para3">
+        <div class="para3">
           If you're having trouble witha fountain pen wheather it's scratchy,
-          too dry, or too wet...
-        </p>
+          too dry, or too wet... If you're having trouble witha fountain pen
+          wheather it's scratchy, too dry, or too wet... 
+        
+        </div>
 
         <p class="readmore">READ MORE</p>
       </div>
 
       <div class="blog2">
-        <p class="para3">Productivity</p>
+        <p>Productivity</p>
 
         <h2 class="h2">How to Craft a Better Todo List</h2>
 
-        <p class="para3">
+        <div class="para3" >
           A well-crafted todo list acts as a guiding light for your day. It
-          helps you overcome...
-        </p>
+          helps you overcome... having trouble witha fountain pen wheather it's
+          scratchy, too dry, or too wet... 
+          
+        </div>
 
-        <p class="readmore">READ MORE</p>
+        <p class="readmore">
+          READ MORE
+        </p>
       </div>
     </div>
 
@@ -155,9 +162,17 @@
         <!-- First and second image -->
 
         <div class="gadgets">
-          <img src="./images/watch.jpg" class="img4" />
+          <img
+            onclick="showDetails('watch')"
+            src="./images/watch.jpg"
+            class="img4"
+          />
 
-          <img src="./images/camera.avif" class="img5" />
+          <img
+            onclick="showDetails('camera')"
+            src="./images/camera.avif"
+            class="img5"
+          />
         </div>
 
         <!-- Image name -->
@@ -238,10 +253,11 @@
 
           <i class="fa-brands fa-linkedin"></i>
 
-          <p class="para6">
-            Kanyakumari,629175,Tamil Nadu,<br />
-            <p class="india">India</p>
-          </p>
+          <p class="para6">Kanyakumari,629175,Tamil Nadu,<br /></p>
+
+          <p class="india">India</p>
+        
+
         </div>
 
         <div id="div2">
@@ -251,7 +267,6 @@
           <h6 class="h6">Career</h6>
           <h6 class="h6">Press Releases</h6>
           <h6 class="h6">Gift a Smile</h6>
-
         </div>
 
         <div id="div3">
@@ -263,7 +278,6 @@
           <h6 class="h6-1">Facebook</h6>
           <h6 class="h6-1">Twitter</h6>
           <h6 class="h6-1">Instagram</h6>
-
         </div>
 
         <div id="div4">
@@ -273,11 +287,15 @@
           <h6 class="h6-2">Protection</h6>
           <h6 class="h6-2">Your Account</h6>
           <h6 class="h6-2">Help</h6>
-          
         </div>
       </div>
 
       <p class="para7">2025 by Shalvin. Created with HTML & CSS</p>
     </footer>
+    
+   
   </body>
+  <script src="./project.js"></script>
 </html>
+
+
